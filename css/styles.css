@@ -51,10 +51,13 @@ background-color: #ECECEC;
     align-items: center;
     
 }
-.section {
-    padding: 94px 0;
-
+.section{
+margin-top: 94px;
 }
+.section:last-child {
+    margin-bottom: 94px;
+}
+
 .nav-all{
     display:flex;
 }
@@ -123,18 +126,18 @@ margin: 32px 0;
     letter-spacing: 0.02em;
     justify-content: flex-end;
     display: flex;
-    margin: 0 auto;
-    border: 3px solid #212121;
+    margin-left: auto;
     
     }
 
 .contact-mail, .contact-phone{
     text-decoration: none;
-    margin-right: 50px;
+    
 }
 
 .contact-mail{
 color: #2196F3;
+margin-right: 50px;
 }
 
 .contact-phone{
@@ -179,7 +182,8 @@ margin: 0 auto;
 
 }
 
-.subtitle{
+.subtitle,
+.portfolio-title{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -195,23 +199,15 @@ margin: 0 auto;
 .work-flex,
 .team-flex 
 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
-.subtitle-flex:not(:last-child),
-.work-flex:not(:last-child),
-.team-flex:not(:last-child)
-{
-  padding-right: 30px;  
-}
 .subtitle-list,
 {
     list-style: none;
-    width: 270px;
+    weight: 270px;
+    
 }
 
 .subtitle-item{
@@ -220,6 +216,7 @@ font-size: 14px;
 line-height: 16px;
 text-transform: uppercase;
 color: #212121;
+margin-bottom: 10px;
 }
 
 .subtitle-desc{
@@ -235,7 +232,7 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 color: #212121;
-padding-bottom:50px ;
+margin-bottom:50px ;
 }
 
 .work-item, 
@@ -243,6 +240,9 @@ padding-bottom:50px ;
     list-style: none;
 }
 
+.team-img-text{
+    margin: 30px 0;
+}
 
 .team-name{
 font-weight: 500;
@@ -263,7 +263,11 @@ color: #757575;
 }
 
 .footer{
-    background-color:#2F303A;  
+    background-color:#2F303A; 
+    padding: 60px 0; 
+}
+.footer .logo-studio{
+    color: #FFFFFF;
 }
 .address{
     font-style: normal;
@@ -314,9 +318,13 @@ visibility: hidden;
     justify-content: center;
     
 }
+.portfolio-button {
+    margin-bottom: 50px;
+    gap: 8px
+}
 
 .portfolio-works{
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .portfolio-pagination:not(:last-child) {
