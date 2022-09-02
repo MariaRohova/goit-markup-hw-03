@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-
+   
 </head>
 <body>
 <!--Header-->
 
     <header class="header">
-        <nav>
+        <div class="container">
+        <nav class="nav-all">
+            <div class="logo">
             <a href="./index.html" class="logo-web">Web<span class="logo-studio">Studio</span> </a>
-            
+        </div>
             <ul class="nav">
                <li class="nav-list">  <a href="./index.html" class="nav-link" > Студія</a>         </li>
                <li class="nav-list">  <a href="./portfolio.html" class="nav-link"> Портфоліо</a>         </li>
@@ -30,7 +33,7 @@
                 <li> <a href="mailto:info@devstudio.com" class="contact-mail"> info@devstudio.com</a> </li>                    
                 <li> <a href="tell:+380961111111" class="contact-phone"> +38 096 111 11 11 </a>        </li>
             </ul>
-        
+        </div>
     </header>
 
     <main>
@@ -43,7 +46,7 @@
 
 <section class="section">
     <h2 class="subtitle"> Проекти WebStudio</h2>
-    <ul>
+    <ul class="subtitle-flex">
         <li class="subtitle-list">
             <h3 class="subtitle-item">УВАГА ДО ДЕТАЛЕЙ </h3>
             <p class="subtitle-desc">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -66,12 +69,13 @@
 
 
 
-<section>
+<section class="section">
+
     <h2 class="work">Чим ми займаємося</h2>
-        <ul>
-            <li class="work-list"> <img src="./goit-markup-hw-01/images/img-1.jpg" alt="Чим ми займаємося" width="370"> </li>
-            <li class="work-list"> <img src="./goit-markup-hw-01/images/img-2.jpg" alt="Чим ми займаємося" width="370"> </li>
-            <li class="work-list"> <img src="./goit-markup-hw-01/images/img-3.jpg" alt="Чим ми займаємося" width="370"> </li>
+        <ul class="work-flex">
+            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-1.jpg" alt="Чим ми займаємося" width="370"> </li>
+            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-2.jpg" alt="Чим ми займаємося" width="370"> </li>
+            <li class="work-item"> <img src="./goit-markup-hw-01/images/img-3.jpg" alt="Чим ми займаємося" width="370"> </li>
         </ul>
         
 </section>
@@ -80,7 +84,7 @@
 <!--Team-->
     <section class="section">
         <h2 class="team">Наша команда</h2>
-        <ul>
+        <ul class="team-flex">
             <li class="team-list"> 
                 <img  class="team-img" src="./goit-markup-hw-01/images/img.jpg" alt="Ігор Дем'яненко" width="260">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
