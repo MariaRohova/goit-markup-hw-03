@@ -53,6 +53,9 @@ border-bottom: 1px solid #ECECEC;
 .section{
 padding: 94px 0;
 }
+.section:nth-child(3){
+    padding-top: 0;
+}
 
 
 .nav-all{
@@ -192,11 +195,6 @@ margin: 0 auto;
     margin: -1px;
 }
 
-.subtitle-flex
-{
-margin-bottom: 94px;
-}
-
 .subtitle-flex,
 .work-flex,
 .team-flex 
@@ -242,7 +240,7 @@ margin-bottom:50px ;
 }
 
 .team-img-text{
-    margin: 30px 0;
+    padding: 30px 0;
 }
 
 .team-name{
@@ -274,6 +272,12 @@ color: #757575;
 .address{
     font-style: normal;
     margin-top: 20px;
+}
+
+.contact-address, 
+.footer-contact :nth-child(1)
+{
+    margin-bottom: 9px;
 }
 
 .contact-address{
@@ -326,7 +330,6 @@ visibility: hidden;
     
 }
 .portfolio-button {
-    margin-bottom: 50px;
     gap: 8px
 }
 
